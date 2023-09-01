@@ -1,6 +1,6 @@
 # 初始化資料庫連線
 from pymongo.mongo_client import MongoClient
-url = "mongodb+srv://******@cluster0.aagcvdi.mongodb.net/?retryWrites=true&w=majority"
+url = "mongodb+srv://********@cluster0.aagcvdi.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(url)
 # try:
 #     client.admin.command('ping')
