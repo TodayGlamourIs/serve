@@ -200,8 +200,8 @@ def preprocess_png_image(png_path):
 
 
 # 初始化 LINE Bot API 和 WebhookHandler
-line_bot_api = LineBotApi('3F5Asq458Ukk4S4EGZn1UycwcConIjnyqYECL9D3GF79Gbh4zeXqI18DoUpD4Jl5/7dlySCniVFSpyG0EzZw+qsgJMz9+aUua7Vk22YLBgEhah0qELxQAaLDXJiBl83ovTkw0nl1A6eVgLwvrXUJagdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('dfa2ab992236372044ff5ede43274bff')
+line_bot_api = LineBotApi(channel_access_token)
+handler = WebhookHandler(channel_secret)
 
 @app.route("/line_webhook", methods=['POST'])
 def line_webhook():
